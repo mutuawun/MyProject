@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Now</title>
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Main navigation -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="index.html" class="logo-mark" aria-label="Asili Kitchen home">
+          <img src="assets/logo.png" alt="Asili Kitchen logo">
+        </a>
+        <h1>Asili Kitchen</h1>
+      </div>
+      <nav class="site-nav">
+        <a href="index.html#menu">Favorites</a>
+        <a href="index.html#locations">Locations</a>
+        <a href="order.html">Order</a>
+        <a href="index.html#reserve">Reserve</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle">Menu</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Order menu and cart -->
+    <section class="order-section">
+      <div class="container">
+        <div class="order-layout">
+          <div class="menu-panel">
+            <h2>Our Menu</h2>
+            <div class="menu-filters" id="menuFilters">
+              <button class="filter active" data-category="all">All</button>
+              <button class="filter" data-category="starters">Starters</button>
+              <button class="filter" data-category="mains">Mains</button>
+              <button class="filter" data-category="desserts">Desserts</button>
+              <button class="filter" data-category="beverages">Beverages</button>
+            </div>
+            <div class="menu-grid" id="menuGrid">
+              <article class="menu-item" data-category="starters" style="--menu-image: url('https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=700&q=78');">
+                <h4>Roasted Beet Salad</h4>
+                <p>Mixed greens, goat cheese, citrus vinaigrette.</p>
+                <span>KES1800</span>
+                <button class="add-to-cart" data-name="Roasted Beet Salad" data-price="1800">Add to Cart</button>
+              </article>
+               <article class="menu-item" data-category="beverages" style="--menu-image: url('https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=700&q=78');">
+                <h4>Karak Chai</h4>
+                <span>KES400</span>
+                <button class="add-to-cart" data-name="Karak Chai" data-price="400">Add to Cart</button>
+              </article>
+               <article class="menu-item" data-category="beverages" style="--menu-image: url('https://images.unsplash.com/photo-1621263764928-df1444c5e859?auto=format&fit=crop&w=700&q=78');">
+                <h4>Hibiscus Lemonade</h4>
+                <span>KES450</span>
+                <button class="add-to-cart" data-name="Hibiscus Lemonade" data-price="450">Add to Cart</button>
+              </article>
+               <article class="menu-item" data-category="beverages" style="--menu-image: url('https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=700&q=78');">
+                <h4>Masala Chai Latte</h4>
+                <span>KES390</span>
+                <button class="add-to-cart" data-name="Masala Chai Latte" data-price="390">Add to Cart</button>
+              </article>
+               <article class="menu-item" data-category="mains" style="--menu-image: url('https://commons.wikimedia.org/wiki/Special:FilePath/Chopped%20cheese%20Crotona%20Bronx.jpg');">
+                <h4>Chopped Cheese Sandwich</h4>
+                <p>Mozzarella cheese, Grilled Chicken, Lettuce and Tomatoes on artisan bread.</p>
+                <span>KES1800</span>
+                <button class="add-to-cart" data-name="Chopped Cheese Sandwich" data-price="1800">Add to Cart</button>
+              </article>
+               <article class="menu-item" data-category="starters" style="--menu-image: url('https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?auto=format&fit=crop&w=700&q=78');">
+                <h4>Garlic Parmesan Fries</h4>
+                <p>Served with a side of ranch dressing.</p>
+                <span>KES650</span>
+                <button class="add-to-cart" data-name="Garlic Parmesan Fries" data-price="650">Add to Cart</button>
+              </article>
+               <article class="menu-item" data-category="starters" style="--menu-image: url('https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=700&q=78');">
+                <h4>Beef Samosa</h4>
+                <span>KES350</span>
+                <button class="add-to-cart" data-name="Beef Samosa" data-price="350">Add to Cart</button>
+              </article>
+               <article class="menu-item" data-category="starters" style="--menu-image: url('https://images.unsplash.com/photo-1604909052743-94e838986d24?auto=format&fit=crop&w=700&q=78');">
+                <h4>Chicken Wings</h4>
+                <p>Crispy wings tossed in a tangy house glaze.</p>
+                <span>KES950</span>
+                <button class="add-to-cart" data-name="Chicken Wings" data-price="950">Add to Cart</button>
+              </article>
+               <article class="menu-item" data-category="mains" style="--menu-image: url('https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=700&q=78');">
+                <h4>Double Smash Hamburger</h4>
+                <p>Two large Beef Paties with Cheese of your choice served on a Toasted sesame bun.</p>
+                <span>KES1870</span>
+                <button class="add-to-cart" data-name="Double Smash Hamburger" data-price="1870">Add to Cart</button>
+              </article>
+               <article class="menu-item" data-category="starters" style="--menu-image: url('https://images.unsplash.com/photo-1690085664028-3b8465e4ac24?auto=format&fit=crop&w=700&q=78');">
+                <h4>Loaded Nachos</h4>
+                <p>Crisp tortilla chips topped with cheese, salsa, and jalapenos.</p>
+                <span>KES850</span>
+                <button class="add-to-cart" data-name="Loaded Nachos" data-price="850">Add to Cart</button>
+              </article>
+               <article class="menu-item" data-category="beverages" style="--menu-image: url('https://images.unsplash.com/photo-1622597467836-f3285f2131b8?auto=format&fit=crop&w=700&q=78');">
+                <h4>Lime & Chilli Mango Refresher</h4>
+                <span>KES460</span>
+                <button class="add-to-cart" data-name="Lime & Chilli Mango Refresher" data-price="460">Add to Cart</button>
+              </article>
+               <article class="menu-item" data-category="desserts" style="--menu-image: url('https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=700&q=78');">
+                <h4>Ice Cream Sandwich</h4>
+                <p>Classic ice cream between two cookies.</p>
+                <span>KES800</span>
+                <button class="add-to-cart" data-name="Ice Cream Sandwich" data-price="800">Add to Cart</button>
+              </article>
+               <article class="menu-item" data-category="starters" style="--menu-image: url('https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=700&q=78');">
+                <h4>Mediterranean Salad</h4>
+                <p>House marinated olives, spicy hummus, tzatziki and fluffy house made pita.</p>
+                <span>KES900</span>
+                <button class="add-to-cart" data-name="Mediterranean Salad" data-price="900">Add to Cart</button>
+              </article>
+               <article class="menu-item" data-category="desserts" style="--menu-image: url('https://images.unsplash.com/photo-1562376552-0d160a2f238d?auto=format&fit=crop&w=700&q=78');">
+                <h4>Messy Waffle</h4>
+                <p>Home made waffle served with a scoop of vanilla ice cream and topped with nuttela.</p>
+                <span>KES790</span>
+                <button class="add-to-cart" data-name="Messy Waffle" data-price="790">Add to Cart</button>
+              </article>
+               <article class="menu-item" data-category="mains" style="--menu-image: url('https://images.unsplash.com/photo-1562967916-eb82221dfb92?auto=format&fit=crop&w=700&q=78');">
+                <h4>Korean Fried Chicken </h4>
+                <p>Crispy fried chicken seasoned with Korean spices.</p>
+                <span>KES1700</span>
+                <button class="add-to-cart" data-name="Korean Fried Chicken" data-price="1700">Add to Cart</button>
+              </article>
+               <article class="menu-item" data-category="mains" style="--menu-image: url('https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&fit=crop&w=700&q=78');">
+                <h4>Kizungu Breakfast</h4>
+                <p>Freshly prepared eggs, bread, and sausages, served with your choice of tea or coffee.</p>
+                <span>KES1200</span>
+                <button class="add-to-cart" data-name="Kizungu Breakfast" data-price="1200">Add to Cart</button>
+              </article>
+              <article class="menu-item" data-category="mains" style="--menu-image: url('https://commons.wikimedia.org/wiki/Special:FilePath/Nyama%20Choma%20%28BBQ%20the%20Kenyan%20way%29.jpg');">
+                  <h4>Nyama Choma</h4>
+                  <p>Char-grilled beef served with kachumbari and ugali.</p>
+                  <span>KES2000</span>
+                  <button class="add-to-cart" data-name="Nyama Choma" data-price="2000">Add to Cart</button>
+              </article>
+              <article class="menu-item" data-category="mains" style="--menu-image: url('https://commons.wikimedia.org/wiki/Special:FilePath/Pilau%2C%20Samosa%2CFried%20Mutton%20and%20Kachumbari%20%28Mombasa%20Island%29.JPG');">
+                    <h4>Kenyan Chicken Pilau</h4>
+                    <p>Spiced rice cooked with tender chicken and pilau masala.</p>
+                    <span>KES1650</span>
+                    <button class="add-to-cart" data-name="Kenyan Chicken Pilau" data-price="1650">Add to Cart</button>
+              </article>
+              <article class="menu-item" data-category="desserts" style="--menu-image: url('https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=700&q=78');">
+                      <h4>Chocolate Hazelnut Tart</h4>
+                      <p>Rich dark chocolate tart with a hazelnut crunch.</p>
+                      <span>KES900</span>
+                      <button class="add-to-cart" data-name="Chocolate Hazelnut Tart" data-price="900">Add to Cart</button>
+              </article>
+              <article class="menu-item" data-category="desserts" style="--menu-image: url('https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?auto=format&fit=crop&w=700&q=78');">
+                      <h4>Chocolate Creme Brulee</h4>
+                      <p>Rich vanilla custard topped with a caramelized sugar crust.</p>
+                      <span>KES850</span>
+                      <button class="add-to-cart" data-name="Chocolate Creme Brulee" data-price="850">Add to Cart</button>
+              </article>
+             
+               <article class="menu-item" data-category="beverages" style="--menu-image: url('https://images.unsplash.com/photo-1505252585461-04db1eb84625?auto=format&fit=crop&w=700&q=78');">
+                      <h4>Very Berry Fantasy</h4>
+                      <span>KES390</span>
+                      <button class="add-to-cart" data-name="Very Berry Fantasy" data-price="390">Add to Cart</button>
+              </article>
+              <article class="menu-item" data-category="beverages" style="--menu-image: url('https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=700&q=78');">
+                      <h4>Iced Caramel Macchiato</h4>
+                      <span>KES450</span>
+                      <button class="add-to-cart" data-name="Iced Caramel Macchiato" data-price="450">Add to Cart</button>
+              </article>
+
+             
+            </div>
+          </div>
+          <div class="cart-panel">
+            <h3>Your Cart</h3>
+            <div id="cartItems"></div>
+            <div class="cart-total">
+              <strong>Total: KES<span id="cartTotal">0.00</span></strong>
+            </div>
+            <button class="button primary" id="checkoutBtn">Checkout</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>34 Kindaruma Road<br>Nairobi, Kenya</p>
+        <p>Phone: +254 722 793 329</p>
+        <p>Email: info@asilikitchen.com</p>
+      </div>
+      <!-- Open Social Links in New Tab -->
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <div class="social-links">
+          <ul>
+            <li>
+              <a href="https://facebook.com" target="_blank" rel="noopener">
+                <img src=https://res.cloudinary.com/derxshkcm/image/upload/v1779034094/facebook_logo_hx44af.png alt="" class="social-icon">
+                Facebook
+              </a>
+            </li>
+            <li>
+              <a href="https://instagram.com" target="_blank" rel="noopener">
+                <img src=https://res.cloudinary.com/derxshkcm/image/upload/v1779034077/ig_logo_dpmk49.png alt="" class="social-icon">
+                Instagram
+              </a>
+            </li>
+            <li>
+              <a href="https://x.com" target="_blank" rel="noopener">
+                <img src=https://res.cloudinary.com/derxshkcm/image/upload/v1779034086/x_logo_pr4kzx.png alt="" class="social-icon">
+                X
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-credit">&copy; 2026 Jabali Mutua.</p>
+    </div>
+  </footer>
+   
+
+  <script src="order.js"></script>
+</body>
+</html>

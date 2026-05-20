@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asili Kitchen</title>
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Main navigation -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="#" class="logo-mark" aria-label="Asili Kitchen home">
+          <img src="assets/logo.png" alt="Asili Kitchen logo">
+        </a>
+        <h1>Asili Kitchen</h1>
+      </div>
+      <nav class="site-nav">
+        <a href="#menu">Favorites</a>
+        <a href="#locations">Locations</a>
+        <a href="#reserve">Reserve</a>
+        <a href="order.html">Order</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle">Menu</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero section -->
+    <section class="hero">
+      <div class="container hero-content">
+        <div>
+          <span class="welcome1">Welcome to</span>
+          <h2>ASILI KITCHEN</h2>
+          <span class="welcome2">WHERE KENYAN HERITAGE MEETS MODERN DINING</span>
+          <p id="welcometext">Welcome to Asili Kitchen, where Kenyan heritage meets modern comfort. We celebrate authentic Kenyan flavors made with fresh ingredients, care, and true hospitality. Come experience the taste of home and the pride of our roots in every meal.</p>
+
+          <div class="hero-actions">
+            <a class="button primary" href="#reserve">Book a table</a>
+            <a class="button ghost" href="order.html">Order Now</a>
+          </div>
+        </div>
+    
+      </div>
+    </section>
+
+    <!-- About section -->
+    <section id="about" class="section about-section">
+      <div class="container split">
+        <div>
+          <h3>About Us</h3>
+          <p>
+            At Asili Kitchen, we serve food that feels like home. Inspired by Kenyan hospitality and familiar flavors, our meals are freshly prepared, hearty, and made with care. Whether you're stopping by for chai, lunch with friends, or a family meal, you'll always find a warm welcome.
+          </p>
+          <p>Karibu sana.</p>
+        </div>
+        <div class="stats-grid">
+          <div>
+            <strong>10+</strong>
+            <span>Years of service</span>
+          </div>
+          <div>
+            <strong>90%</strong>
+            <span>Locally sourced produce</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu highlights -->
+    <section id="menu" class="section menu-section">
+      <div class="container">
+        <div class="section-header">
+          <h3>Menu Favorites</h3>
+          <p>Choose from our chef-selected dishes.</p>
+        </div>
+        <div class="menu-filters" id="menuFilters">
+          <button class="filter active" data-category="all">All</button>
+          <button class="filter" data-category="starters">Starters</button>
+          <button class="filter" data-category="mains">Mains</button>
+          <button class="filter" data-category="desserts">Desserts</button>
+        </div>
+        <div class="menu-grid" id="menuGrid">
+          <article class="menu-item" data-category="starters" style="--menu-image: url('https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=700&q=78');">
+            <h4>Roasted Beet Salad</h4>
+            <p>Mixed greens, goat cheese, citrus vinaigrette.</p>
+            <span>KES 1,200</span>
+          </article>
+          <article class="menu-item" data-category="mains" style="--menu-image: url('https://commons.wikimedia.org/wiki/Special:FilePath/Nyama%20Choma%20%28BBQ%20the%20Kenyan%20way%29.jpg');">
+            <h4>Nyama Choma</h4>
+            <p>Char-grilled beef served with kachumbari and ugali.</p>
+            <span>KES 2,000</span>
+          </article>
+          <article class="menu-item" data-category="mains" style="--menu-image: url('https://commons.wikimedia.org/wiki/Special:FilePath/Pilau%2C%20Samosa%2CFried%20Mutton%20and%20Kachumbari%20%28Mombasa%20Island%29.JPG');">
+            <h4>Kenyan Chicken Pilau</h4>
+            <p>Spiced rice cooked with tender chicken and pilau masala.</p>
+            <span>KES 1,650</span>
+          </article>
+          <article class="menu-item" data-category="desserts" style="--menu-image: url('https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=700&q=78');">
+            <h4>Chocolate Hazelnut Tart</h4>
+            <p>Rich dark chocolate with hazelnut crunch.</p>
+            <span>KES 900</span>
+          </article>
+          <article class="menu-item" data-category="starters" style="--menu-image: url('https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=700&q=78');">
+            <h4>Garlic Shrimp Crostini</h4>
+            <p>Garlic butter shrimp on toasted baguette slices.</p>
+            <span>KES 1,400</span>
+          </article>
+          <article class="menu-item" data-category="desserts" style="--menu-image: url('https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=700&q=78');">
+            <h4>Ice Cream Sandwich</h4>
+            <p>Classic ice cream between two cookies.</p>
+            <span>KES 900</span>
+          </article>
+          <article class="menu-item" data-category="starters" style="--menu-image: url('https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?auto=format&fit=crop&w=700&q=78');">
+            <h4>Garlic Parmesan Fries</h4>
+            <p>Garlic Parmesan fries with a side of ranch dressing.</p>
+            <span>KES 650</span>
+          </article>
+          <article class="menu-item" data-category="mains" style="--menu-image: url('https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=700&q=78');">
+            <h4>Chopped Cheese Sandwich</h4>
+            <p>Mozzarella cheese, grilled chicken, lettuce, and tomatoes on artisan bread.</p>
+            <span>KES 1,400</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Restaurant locations -->
+    <section id="locations" class="section locations-section">
+      <div class="container">
+        <div class="section-header">
+          <h3>Our Locations</h3>
+          <p>Visit us in the city or book a table at one of our neighborhood spots.</p>
+        </div>
+        <div class="locations-grid">
+          <article class="card location-card">
+            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=78" alt="Warm restaurant dining room at the Kilimani branch">
+            <div class="location-body">
+              <h4>Kilimani</h4>
+              <p>34 Kindaruma Road, Nairobi</p>
+              <p>Open daily 11am-10pm</p>
+            </div>
+          </article>
+          <article class="card location-card">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=78" alt="Inviting restaurant seating at the Lang'ata branch">
+            <div class="location-body">
+              <h4>Lang'ata</h4>
+              <p>45 Lang'ata Road, Nairobi</p>
+              <p>Open daily 10am-11pm</p>
+            </div>
+          </article>
+          <article class="card location-card">
+            <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=800&q=78" alt="Bright restaurant tables at the Parklands branch">
+            <div class="location-body">
+              <h4>Parklands</h4>
+              <p>342 Ring Road Parklands, Nairobi</p>
+              <p>Open daily 10am-9pm</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reservation form -->
+    <section id="reserve" class="section reserve-section">
+      <div class="container split">
+        <div>
+          <h3>Reserve Your Table</h3>
+          <p>Fill out the form and we'll confirm your booking promptly.</p>
+          <form id="reservationForm" class="reserve-form">
+            <label>
+              Name
+              <input type="text" id="guestName" placeholder="Your name" required>
+            </label>
+            <label>
+              Date & Time
+              <input type="datetime-local" id="reservationDate" required>
+            </label>
+            <label>
+              Guests
+              <input type="number" id="guestCount" min="1" max="12" value="2" required>
+            </label>
+            <button class="button secondary" type="submit">Confirm Reservation</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>34 Kindaruma Road<br>Nairobi, Kenya</p>
+        <p>Phone: +254 722 793 329</p>
+        <p>Email: info@asilikitchen.com</p>
+      </div>
+      <!-- Open Social Links in New Tab -->
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <div class="social-links">
+          <ul>
+            <li>
+              <a href="https://facebook.com" target="_blank" rel="noopener">
+                <img src=https://res.cloudinary.com/derxshkcm/image/upload/v1779034094/facebook_logo_hx44af.png alt="" class="social-icon">
+                Facebook
+              </a>
+            </li>
+            <li>
+              <a href="https://instagram.com" target="_blank" rel="noopener">
+                <img src=https://res.cloudinary.com/derxshkcm/image/upload/v1779034077/ig_logo_dpmk49.png alt="" class="social-icon">
+                Instagram
+              </a>
+            </li>
+            <li>
+              <a href="https://x.com" target="_blank" rel="noopener">
+                <img src=https://res.cloudinary.com/derxshkcm/image/upload/v1779034086/x_logo_pr4kzx.png alt="" class="social-icon">
+                X
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-credit">&copy; 2026 Jabali Mutua.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
