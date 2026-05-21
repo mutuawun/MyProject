@@ -45,10 +45,11 @@ function submitReservation(event) {
   event.preventDefault();
 
   const name = document.getElementById('guestName').value.trim();
+  const phone = document.getElementById('guestPhone').value.trim();
   const date = document.getElementById('reservationDate').value;
   const guests = document.getElementById('guestCount').value;
 
-  if (name === '' || date === '' || guests === '') {
+  if (name === '' || phone === '' || date === '' || guests === '') {
     alert('Please complete all reservation fields.');
     return;
   }

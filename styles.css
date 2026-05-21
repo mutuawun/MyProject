@@ -415,6 +415,16 @@ a {
   padding: 1.35rem 1.45rem 1.5rem;
 }
 
+.directions-button {
+  margin-top: 0.85rem;
+  background: var(--tomato);
+  color: white;
+}
+
+.directions-button:hover {
+  background: var(--tomato-dark);
+}
+
 .card h4 {
   margin: 0 0 0.65rem;
   color: var(--brown-dark);
